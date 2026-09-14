@@ -190,12 +190,12 @@ document.querySelectorAll('.card-carousel').forEach((carousel) => {
 // Dados da galeria (imagens em assets/galeria/, nomes sequenciais)
 const galeriaImagens = [
     { src: 'assets/galeria/galeria-foto-01.webp', alt: 'Volume Brasileiro Gatinho', categoria: 'Volume Brasileiro' },
-    { src: 'assets/galeria/galeria-foto-02.webp', alt: 'Fox Eyes', categoria: 'Fox Eyes' },
-    { src: 'assets/galeria/galeria-foto-03.webp', alt: 'Efeito Sirena', categoria: 'Sirena' },
-    { src: 'assets/galeria/galeria-foto-04.webp', alt: 'Efeito Boneca', categoria: 'Boneca' },
-    { src: 'assets/galeria/galeria-foto-05.webp', alt: 'Efeito Esquilo', categoria: 'Esquilo' },
-    { src: 'assets/galeria/galeria-foto-06.jpg', alt: 'Volume Brasileiro Gatinho - resultado real', categoria: 'Volume Brasileiro' },
-    { src: 'assets/galeria/galeria-foto-07.jpg', alt: 'Fox Eyes - resultado real', categoria: 'Fox Eyes' }
+    { src: 'assets/galeria/galeria-foto-02.webp', alt: 'Efeito Sirena', categoria: 'Sirena' },
+    { src: 'assets/galeria/galeria-foto-03.jpg', alt: 'Volume Brasileiro', categoria: 'Volume Brasileiro' },
+    { src: 'assets/galeria/galeria-foto-04.jpg', alt: 'Drenagem Linfatica', categoria: 'Drenagem Linfatica' },
+    { src: 'assets/galeria/galeria-foto-05.jpg', alt: 'Drenagem Linfatica', categoria: 'Drenagem Linfatica' },
+    { src: 'assets/galeria/galeria-foto-06.jpg', alt: 'Drenagem Linfatica', categoria: 'Drenagem Linfatica' },
+
 ];
 
 // Categorias únicas (geradas automaticamente a partir do array)

@@ -8,3 +8,6 @@ Thumbs.db
 # Editores
 .vscode/
 .idea/
+
+# Scripts de investigação temporários
+.probe/

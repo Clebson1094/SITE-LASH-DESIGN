@@ -257,7 +257,9 @@ function renderizarGaleria() {
         img.className = 'galeria-foto';
         img.src = imagem.src;
         img.alt = imagem.alt;
-        img.loading = 'lazy';
+        // Carregamento imediato (como as demais imagens do site): lazy roubava o
+        // fetch da primeira foto durante a animação de entrada da seção,
+        // deixando o card vazio até um clique/filtro forçar o carregamento.
         img.decoding = 'async';
 
         item.appendChild(img);

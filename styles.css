@@ -910,7 +910,7 @@ p {
     overflow: hidden;
     box-shadow: var(--sombra-forte);
     border: 1px solid var(--cor-borda);
-    aspect-ratio: 16 / 9;
+    background: var(--cor-secundaria);
 }
 
 .video-player {

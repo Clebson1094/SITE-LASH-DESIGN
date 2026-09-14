@@ -146,3 +146,39 @@ updateActiveLink();
    =================================== */
 console.log('%c✨ Paula Cristina - Site Catálogo', 'color: #C8A951; font-size: 24px; font-weight: bold;');
 console.log('%cDesenvolvido com luxo e sofisticação.', 'color: #B0B0B0; font-size: 14px;');
+
+/* ===================================
+   CARROSSEL DE IMAGENS (VOLUME BRASILEIRO GATINHO)
+   =================================== */
+document.querySelectorAll('.card-carousel').forEach((carousel) => {
+    const imageBox = carousel.closest('.card-image');
+    const prevBtn = imageBox.querySelector('.carousel-prev');
+    const nextBtn = imageBox.querySelector('.carousel-next');
+    const slides = carousel.querySelectorAll('.card-slide');
+    let current = 0;
+
+    function updateCarousel() {
+        slides.forEach((slide, index) => {
+            slide.classList.toggle('active', index === current);
+        });
+        // Exibir apenas as setas aplicáveis
+        prevBtn.hidden = current === 0;
+        nextBtn.hidden = current === slides.length - 1;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        if (current > 0) {
+            current -= 1;
+            updateCarousel();
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (current < slides.length - 1) {
+            current += 1;
+            updateCarousel();
+        }
+    });
+
+    updateCarousel();
+});

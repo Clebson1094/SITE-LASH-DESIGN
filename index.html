@@ -328,28 +328,27 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Portfólio</span>
-                <h2 class="section-title">Fotos <em>Reais</em></h2>
-                <p class="section-description">Resultados reais de alguns dos nossos atendimentos</p>
+                <h2 class="section-title">Resultados <em>Reais</em></h2>
+                <p class="section-description">Toque em uma foto para ampliar e navegar pelos resultados</p>
             </div>
-            <div class="galeria-grid">
-                <div class="galeria-item">
-                    <img src="assets/galeria/antes-depois-01.jpg" alt="Antes e Depois 1" class="galeria-foto">
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/galeria/fox-eyes-01.jpg" alt="Fox Eyes - Resultado" class="galeria-foto">
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/galeria/fio-a-fio-01.jpg" alt="Cílios Fio a Fio - Resultado" class="galeria-foto">
-                </div>
-                <div class="galeria-item destaque">
-                    <img src="assets/galeria/antes-depois-02.jpg" alt="Resultado da Primeira Sessão!" class="galeria-foto">
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/galeria/atendimento-01.jpg" alt="Atendimento" class="galeria-foto">
-                </div>
-            </div>
+            <div class="galeria-filtros" id="galeriaFiltros" role="tablist" aria-label="Filtrar galeria"></div>
+            <div class="galeria-grid" id="galeriaGrid"></div>
         </div>
     </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Visualizador de fotos">
+        <button class="lightbox-btn lightbox-fechar" id="lightboxFechar" type="button" aria-label="Fechar visualizador">&times;</button>
+        <button class="lightbox-btn lightbox-prev" id="lightboxPrev" type="button" aria-label="Foto anterior">&lsaquo;</button>
+        <figure class="lightbox-figura">
+            <img src="" alt="" class="lightbox-imagem" id="lightboxImagem">
+        </figure>
+        <button class="lightbox-btn lightbox-next" id="lightboxNext" type="button" aria-label="Próxima foto">&rsaquo;</button>
+        <div class="lightbox-info">
+            <span class="lightbox-contador" id="lightboxContador"></span>
+            <span class="lightbox-categoria" id="lightboxCategoria"></span>
+        </div>
+    </div>
 
     <!-- Hero Section (depois das fotos reais da galeria) -->
     <section class="hero hero-secondaria" id="hero">

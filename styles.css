@@ -549,6 +549,7 @@ p {
 .sobre {
     padding: var(--espaco-16) 0;
     background: var(--cor-secundaria);
+    opacity: 0;
 }
 
 .sobre-grid {
@@ -700,6 +701,7 @@ p {
 .procedimentos {
     padding: var(--espaco-16) 0;
     background: var(--cor-fundo);
+    opacity: 0;
 }
 
 .filtros {
@@ -926,6 +928,7 @@ p {
 .galeria {
     padding: var(--espaco-16) 0;
     background: var(--cor-secundaria);
+    opacity: 0;
 }
 
 .galeria-filtros {
@@ -1108,6 +1111,7 @@ p {
 .contato {
     padding: var(--espaco-16) 0;
     background: var(--cor-fundo);
+    opacity: 0;
 }
 
 .contato-grid {

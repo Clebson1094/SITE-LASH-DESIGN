@@ -76,7 +76,7 @@ filtroBtns.forEach(btn => {
             const categoria = card.dataset.category;
 
             if (filtro === 'todos' || categoria === filtro) {
-                card.style.display = 'flex';
+                card.style.display = '';
                 card.style.animation = 'fadeUp 0.5s ease forwards';
             } else {
                 card.style.display = 'none';

@@ -632,6 +632,46 @@ p {
     z-index: 2;
 }
 
+/* ===================================
+   CERTIFICADO DA PROFISSIONAL
+   =================================== */
+.sobre-certificado {
+    margin: var(--espaco-6) 0;
+    max-width: 380px;
+}
+
+.certificado-frame {
+    position: relative;
+    border-radius: var(--raio-lg);
+    overflow: hidden;
+    border: 1px solid var(--cor-borda);
+    background: var(--cor-fundo-card);
+    box-shadow: var(--sombra-suave);
+    transition: border-color var(--transicao-normal);
+}
+
+.certificado-frame:hover {
+    border-color: var(--cor-primaria-alpha-30);
+}
+
+.certificado-foto {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.certificado-legenda {
+    font-size: var(--tamanho-xs);
+    color: var(--cor-texto-mutado);
+    margin-top: var(--espaco-2);
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
 .sobre-foto-detalhe:hover {
     transform: translateY(-8px) scale(1.02);
 }
@@ -1354,6 +1394,11 @@ p {
     .sobre-image {
         max-width: 400px;
         margin: 0 auto;
+    }
+
+    .sobre-certificado {
+        max-width: 100%;
+        margin: var(--espaco-6) 0;
     }
 
     .sobre-foto-detalhe {

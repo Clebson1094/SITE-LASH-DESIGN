@@ -156,6 +156,59 @@ p {
 }
 
 /* ===================================
+   SEÇÃO EXCELÊNCIA (NOVA)
+   =================================== */
+.excelencia {
+    padding: var(--espaco-16) 0;
+    background: var(--cor-fundo);
+    position: relative;
+    overflow: hidden;
+}
+
+.excelencia-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espaco-8);
+    align-items: center;
+    padding: 0 var(--container-padding);
+}
+
+.excelencia-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.excelencia-image-container {
+    margin: var(--espaco-6) auto 0;
+    max-width: 280px;
+    width: 80%;
+    position: relative;
+}
+
+.excelencia-foto {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--raio-lg);
+    border: 1px solid var(--cor-borda);
+    background: var(--cor-fundo-card);
+    box-shadow: var(--sombra-suave);
+    transition: all var(--transicao-normal);
+    position: relative;
+    z-index: 2;
+}
+
+.excelencia-foto:hover {
+    transform: translateY(-4px);
+    border-color: var(--cor-primaria-alpha-30);
+}
+
+/* ===================================
    UTILITÁRIOS
    =================================== */
 .container {

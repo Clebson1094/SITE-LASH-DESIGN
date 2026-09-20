@@ -195,6 +195,8 @@ const galeriaImagens = [
     { src: 'assets/galeria/galeria-foto-04.jpg', alt: 'Drenagem Linfatica', categoria: 'Drenagem Linfatica' },
     { src: 'assets/galeria/galeria-foto-05.jpg', alt: 'Drenagem Linfatica', categoria: 'Drenagem Linfatica' },
     { src: 'assets/galeria/galeria-foto-06.jpg', alt: 'Drenagem Linfatica', categoria: 'Drenagem Linfatica' },
+    { src: 'assets/procedimentos/fox-eyes-2.webp', alt: 'Fox Eyes', categoria: 'Fox Eyes' },
+    { src: 'assets/procedimentos/volume-brasileiro-gatinho-3.webp', alt: 'Volume Brasileiro Gatinho', categoria: 'Volume Brasileiro' },
 
 ];
 
